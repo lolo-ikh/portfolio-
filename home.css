@@ -1,0 +1,267 @@
+/*my color palete: #211951 #836FFF #15F5BA #F0F3FF */
+@font-face {
+  font-family: "Tilt Neon";
+  src: url("TiltNeon-Regular.woff2") format("woff2"),
+       url("TiltNeon-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-display: swap;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tilt Neon", sans-serif;
+}
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1444;
+    color: #F0F3FF;
+    padding: 1rem 2rem;
+    /*i want the nav bar to be under it some shadw scince it the same color as the background*/
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.267);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+    margin-right: 1rem;
+}
+.menu a{
+    text-decoration: none;
+    color: #F0F3FF;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.main_section{ /*big div that is gonna cover the whole page it will be the first thing that the user see*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #211951;
+    color: #15F5BA;
+
+}
+.main_section h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.main_section button{
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border: 1px solid #15F5BA;
+    border-color: #15F5BA;
+    color: #15F5BA;
+    background-color: #211951;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#Leena{
+    transition: text-shadow 0.3s ease-in-out;
+}
+.main_section button:hover{
+    background-color: #15F5BA;
+    color: #211951;
+    box-shadow: #41f7c6 0px 0px 10px 0px;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #836FFF;
+}
+
+.content{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    background-color: #836FFF;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+    height: 100%;
+}
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: flex-start; /* Aligns text to the left */
+    height: 100%;
+    padding: 20px;
+    padding-left: 5%;
+}
+
+.main-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #211951;
+}
+
+.main-text p {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #15F5BA;
+    color: #211951;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #41f7c6;
+    box-shadow: 0px 0px 10px #41f7c6;
+}
+
+.image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Skills Preview Styles */
+.skills-preview {
+    background-color: #211951;
+    padding: 4rem 2rem;
+    color: #F0F3FF;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background: #836FFF;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Projects Preview Styles */
+.projects-preview {
+    padding: 4rem 2rem;
+    background: #15F5BA;
+    color: #211951;
+}
+
+.projects-preview h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #F0F3FF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-link {
+    color: #211951;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}
+
+/* Footer Styles */
+.site-footer {
+    background: #1b1444;
+    color: #F0F3FF;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: #15F5BA;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}

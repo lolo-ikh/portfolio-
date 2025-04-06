@@ -1,0 +1,126 @@
+<!--My Portfolio-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="home.css">
+        <!--these are the fonts i am gonna use-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h3>About me</h3>
+                </div>
+                <div >
+                    <ul class="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <section>
+                <div class="main_section">
+                    <div class="main-content">
+                        <h1>Hi, I am <span id="Leena">Leena Ikhlef</span></h1>
+                        <p>Computer Science Student <br> in The National High School Of Artifitial Intellegance(ENSIA)</p>
+                        <button href="about.html" id="hover">Read More</button>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                
+                <div class="content">
+                    
+                    <div class="left">
+                       
+                        <div class="main-text">
+                            <h2>About Me</h2>
+                            <p>
+                                Hi! I'm <strong>Leena Ikhlef</strong>, a Computer Science student passionate about AI, web development, and problem-solving.
+                                I love building creative projects and constantly learning new technologies. 
+                            </p>
+                            <button onclick="downloadResume()">Download Resume</button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="image">
+                            <img src="me.jpg" alt="Leena Ikhlef" width="50%">
+                        </div>
+                    </div>    
+                </div>
+            </section>
+                        <!-- Skills Preview Section -->
+                        <section class="skills-preview">
+                            <div class="skills-container">
+                                <h2>Technical Toolkit</h2>
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <div class="skill-icon">💻</div>
+                                        <h3>Web Development</h3>
+                                        <p>HTML, CSS, JavaScript</p>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-icon">🤖</div>
+                                        <h3>AI/ML</h3>
+                                        <p>Python, TensorFlow</p>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-icon">📱</div>
+                                        <h3>Mobile Dev</h3>
+                                        <p>React Native</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+            
+                        <!-- Projects Preview Section -->
+                        <section class="projects-preview">
+                            <h2>Featured Projects</h2>
+                            <div class="projects-grid">
+                                <div class="project-card">
+                                    <img src="artiphia.png" alt="AI Chatbot">
+                                    <div class="project-info">
+                                        <h3>Art-phia</h3>
+                                        <p>Website for online bidding on Art</p>
+                                        <a href="projects.html#chatbot" class="project-link">View Details →</a>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <img src="argi.png" alt="E-commerce Site">
+                                    <div class="project-info">
+                                        <h3>ArgiGenuis</h3>
+                                        <p>Website Using AI to enhance productivity and optimize resources.</p>
+                                        <a href="projects.html#ecommerce" class="project-link">View Details →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+            
+                        <!-- Footer Section -->
+                        <footer class="site-footer">
+                            <div class="footer-content">
+                                <div class="social-links">
+                                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                                    <a href="mailto:your.email@example.com">Email</a>
+                                </div>
+                                <p class="copyright">© 2023 Leena Ikhlef. All rights reserved</p>
+                            </div>
+                        </footer>
+            
+            
+        </div>
+        <script src="home.js"></script>
+    </body>
+</html>
