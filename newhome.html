@@ -1,0 +1,158 @@
+<!--My Portfolio-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leena's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="newhome.css">
+        <!--these are the fonts i am gonna use-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h3>About me</h3>
+                </div>
+                <div >
+                    <ul class="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+              <section class="hero">
+                <div class="main_section">
+                <div class="main-content">
+                    <h1>Hey There,<br>I'm <span id="Leena">Leena Ikhlef</span></h1>
+                    <p>Computer Science Student <br> at ENSIA</p>
+                    <a href="about.html" class="hero-btn">Read More</a>
+                </div>
+                <div class="image">
+                    <img src="newme.png" alt="Leena Image" class="profile-image">
+                </div>
+                <div class="main-content2">
+                    <h1>Contact me via my email<br><span id="Leena"><a href="#">leena.ikhlef@ensia.edu.dz</a></span></h1>
+                </div>
+                </div>
+            </section>
+                
+                <section class="services-section">
+                    <div class="services-left">
+                        <div class="service-card">
+                        <div class="icon-circle green"><i class="fas fa-laptop-code"></i></div>
+                        <div class="service-text">
+                            <h3>Website Design</h3>
+                            <p>76 Projects</p>
+                        </div>
+                        </div>
+                        <div class="service-card">
+                        <div class="icon-circle yellow"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="service-text">
+                            <h3>Mobile App Design</h3>
+                            <p>63 Projects</p>
+                        </div>
+                        </div>
+                        <div class="service-card">
+                        <div class="icon-circle red"><i class="fas fa-paint-brush"></i></div>
+                        <div class="service-text">
+                            <h3>Brand Identity</h3>
+                            <p>47 Projects</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="services-right">
+                        
+                        <h2>What I Can Help With</h2>
+                        <p>
+                            I can assist you with creating stunning websites, designing intuitive mobile apps, and developing impactful brand identities.<br>
+                            Whether you're looking to enhance your online presence or bring your business ideas to life, I'm here to provide effective digital solutions.<br>
+                            My expertise includes working with modern web technologies, creating visually appealing designs, and optimizing user experiences.
+                        </p>
+                        <br>
+                        <button onclick="downloadCV()" class="btn">Download CV</button>
+                    </div>
+                    </section>
+
+                    <section class="project-section">
+                        <h2>My Projects</h2>
+                        <div class="scroll-buttons">
+                            <button class="scroll-btn left" onclick="scrollProjects('left')">←</button>
+                            <button class="scroll-btn right" onclick="scrollProjects('right')">→</button>
+                        </div>
+
+                        <div class="project-container" id="projectScroll">
+                            <div class="project-card">
+                            <img src="project1.jpg" alt="Project 1">
+                            <h4>Portfolio Website</h4>
+                            </div>
+                            <div class="project-card">
+                            <img src="project2.jpg" alt="Project 2">
+                            <h4>E-commerce Store</h4>
+                            </div>
+                            <div class="project-card">
+                            <img src="project3.jpg" alt="Project 3">
+                            <h4>AI Chatbot</h4>
+                            </div>
+                            <div class="project-card">
+                            <img src="project4.jpg" alt="Project 4">
+                            <h4>Task Manager App</h4>
+                            </div>
+                            <!-- Add more project cards here -->
+                        </div>
+                    </section>
+
+
+
+
+ 
+        </div>
+        <script>
+            window.addEventListener("scroll", function () {
+                const navbar = document.querySelector(".navbar");
+
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        </script>
+        <script>
+            function downloadCV() {
+                // Change the URL to the actual file location of your PDF
+                const cvURL = 'Leena_IKHLEF_CV (3).pdf'; // example: your file in assets folder
+                
+                const link = document.createElement('a');
+                link.href = cvURL;
+                link.download = 'LeenaIKHLEF.pdf';  // this is the name it will save as
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+            </script>
+
+            <script>
+            function scrollProjects(direction) {
+                const container = document.getElementById('projectScroll');
+                const scrollAmount = container.offsetWidth * 0.33; // scroll 1 card at a time
+
+                if (direction === 'left') {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                }
+            }
+            </script>
+
+
+
+    </body>
+</html>

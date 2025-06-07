@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    z-index: 1000;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf7ecb0;
+    color: #3d2215;
+    padding: 2rem 2rem;
+    /*i want the nav bar to be under it some shadw scince it the same color as the background*/
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+    margin-right: 1rem;
+}
+.menu a{
+    text-decoration: none;
+    color: #3d2215;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(61, 34, 21, 0.9); /* transparent brown */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
+
+.navbar.scrolled .menu a,
+.navbar.scrolled h3 {
+    color: white;
+}
+.navbar {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+.menu a {
+    transition: color 0.4s ease;
+}
+.menu a:hover,
+.navbar.scrolled .menu a:hover {
+    color: #dd9f76;
+    text-shadow: #444444c0 0px 0px 1px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf7ec;
+  color: #3d2215;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 10%;
+  background-color: #fdf7ec;
+}
+
+.main_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.main-content {
+  max-width: 500px;
+
+}
+
+.main-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-content #Leena {
+  color: #dd9f76;
+}
+
+.main-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  background-color: #dd9f76;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #c67e4e;
+}
+
+.img{
+    position: relative;
+    
+}
+.profile-image {
+    z-index: 1;
+  width: 400px;
+  border-radius: 0px;
+  position: relative;
+  top: 101px;
+  
+
+}
+.main-content2 {
+    max-width: 500px;
+
+}
+main-content2 a{
+    text-decoration: none;
+
+}
+
+
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #f6e3c0;
+  font-family: 'times new roman', serif;
+  flex-wrap: wrap;
+  padding-left: 10%;
+    padding-right: 10%;
+}
+
+.services-left {
+    
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.service-card {
+  background-color: #f9f0e1;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: transform 0.3s;
+      padding-left: 10%;
+
+}
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.green {
+  background-color: #64371f;
+}
+.yellow {
+  background-color: #734831;
+}
+.red {
+  background-color: #9e725b;
+}
+
+.service-text h3 {
+  margin: 0;
+}
+.service-text p {
+  margin: 0;
+  color: #666;
+}
+
+.services-right {
+  flex: 1;
+  padding-left: 15%;
+  min-width: 280px;
+}
+.services-right h2 {
+  font-size: 2.5rem;
+  color: #3d2215;
+}
+.services-right p {
+  color: #4e3021;
+  line-height: 1.9;
+  margin-top: 1rem;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.stat h3 {
+  font-size: 2rem;
+  color: #3d2215;
+}
+.stat p {
+  color: #4e3021;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+.btn{
+    background-color: #533321;
+    color: #fdf7ec;
+    padding: 15px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+}
+.project-section {
+    width: 100%;
+  padding: 4rem 2rem;
+  background-color: #fdf7ec;
+  position: relative;
+}
+
+.project-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #3d2215;
+}
+
+.project-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.project-card {
+  min-width: 30%;
+  max-width: 30%;
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h4 {
+  color: #3d2215;
+  font-size: 1rem;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.scroll-buttons {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.scroll-btn {
+  pointer-events: all;
+  background-color: #3d2215;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #613f29;
+}
