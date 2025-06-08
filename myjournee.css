@@ -57,7 +57,7 @@
 body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
-  background-color: #0f162e;
+;
   color: white;
 }
 .hero {
@@ -200,4 +200,203 @@ body {
   color: #ffffff;
     transform: scale(1);
 
+}
+
+.timeline-section {
+  background-color: #8ebeeb; /* dark beautiful blue */
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.timeline-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #516077;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #516077;
+}
+
+.timeline-step {
+  position: relative;
+  margin: 3rem 0;
+  padding-left: 2rem;
+}
+
+.timeline-step .dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #f5d0aa;
+  border: 4px solid #516077;
+  border-radius: 50%;
+  z-index: 2;
+  padding-top: 2px;
+  color: #f8f6f6;
+  text-shadow: #444444c0;
+}
+
+.timeline-step.year1 p,
+.timeline-step.year3 p,
+.timeline-step.year5 p {
+  margin-top: 2rem;
+  font-weight: 500;
+  position: relative;
+  left: 15%;
+}
+.timeline-step.year2 p,
+.timeline-step.year4 p{
+  margin-top: 2rem;
+  font-weight: 500;
+  position: relative;
+  right: 25%;
+}
+
+
+.year-note {
+  font-size: 0.9rem;
+  color: #917d73;
+}
+
+.timeline-step.current .dot {
+  background-color: #808ea3;
+  box-shadow: 0 0 15px #516077;
+}
+
+.timeline-step.current p {
+  font-weight: bold;
+  color: #516077;
+}
+
+.timeline-step .year-desc {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  background-color: #f8f6f6;
+  color: #516077;
+  border-radius: 5px;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* When hovered */
+.timeline-step:hover .year-desc {
+  opacity: 1;
+  max-height: 300px; /* Just needs to be higher than any real text */
+  padding: 1rem; /* Reveals padding */
+}
+
+.footer {
+  background-color: #516077;
+  color: #fff7f1;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  color: #6e9eca;
+  margin-bottom: 0.5rem;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #f8f7f6;
+  font-style: italic;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  font-size: 1.4rem;
+  color: #f7f6f5;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+
+  color: #6e9eca;
+}
+
+.moments-carousel {
+  width: 100%;
+  height: 100lvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.moment-slide {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+
+.moment-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.moment-image,
+.moment-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.moment-image img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.moment-text {
+  background-color: #fefefe;
+  color: #4a3b2c;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }

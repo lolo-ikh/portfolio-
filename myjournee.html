@@ -48,8 +48,101 @@
                             <i class="fas fa-envelope"></i>
                         </a></div>
             </section>
+            <section class="timeline-section">
+                <h2> My Academic Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-step year1">
+                    <div class="dot">1</div>
+                    <p>1st Year<br><span class="year-note">Start of the journey </span></p>
+                    <div class="year-desc">Learned the basics of programming and Data Structure and Algorithms and mathimatics fundamantals and fell in love with CS and AI</div>
+                    </div>
+
+                    <div class="timeline-step year2 current">
+                    <div class="dot">2</div>
+                    <p>2nd Year<br><span class="year-note">I am here now!</span></p>
+                    <div class="year-desc">Intro to new concepts in AI and basics, also a deep foundation on statistics and mathimatics.. Building cool projects! and growing strong!</div>
+                    </div>
+
+                    <div class="timeline-step year3">
+                    <div class="dot">3</div>
+                    <p>3rd Year<br><span class="year-note">Advanced topics</span></p>
+                    <div class="year-desc">Rich fundamantals in mobile app building and machine learning..</div>
+
+                    </div>
+
+                    <div class="timeline-step year4">
+                    <div class="dot">4</div>
+                    <p>4th Year<br><span class="year-note">Research & Projects </span></p>
+                    <div class="year-desc">Deep learning and real world projects.</div>
+
+                    </div>
+
+                    <div class="timeline-step year5">
+                    <div class="dot">5</div>
+                    <p>5th Year<br><span class="year-note">Graduation! </span></p>
+                    <div class="year-desc">Graduation project focus.</div>
+
+                    </div>
+                </div>
+                </section>
+                <section class="moments-carousel">
+                    <div class="moment-slide active">
+                        <div class="moment-image">
+                        <img src="ignite1.jpg" alt="Inspiring moment 1">
+                        </div>
+                        <div class="moment-text">
+                        <h2>IGNITE 2025</h2>
+                        <p>
+                            It was my first time stepping into a world where dreams meet reality.<br><br>
+                            I met real professionals, listened to their stories, and discovered just how big the tech world truly is.
+                            <br><br>
+                            That day changed my mindset - I saw where I could be in just a few years if I keep going.
+                            </p>                        
+                        </div>
+                    </div>
+
+                    <div class="moment-slide">
+                        <div class="moment-image">
+                        <img src="ignite2.jpg" alt="Inspiring moment 2">
+                        </div>
+                        <div class="moment-text">
+                        <h2>IGNITE 2025</h2>
+                        <p>
+                         I had the chance to connect with big names like Djezzy, Ooredoo, Mobilis, startups, and even cybersecurity firms!
+                        <br><br>
+                        They shared advice that wasn't just technical — it was about mindset, teamwork, and believing in your unique path.
+                        <br><br>
+                        I left feeling empowered, inspired, and full of new ideas.
+                        </p>
+                        </div>
+                    </div>
+
+                    <!-- Add more slides as you want -->
+                </section>
+
+                
+
 
         </div>
+        <footer class="footer">
+                    <div class="footer-content">
+                        <h3>Leena Ikhlef</h3>
+                        <p>Building beautiful & smart things with passion</p>
+                        <div class="social-icons">
+                        <a href="https://github.com/lolo-ikh" target="_blank" class="icon github" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/leena-ikhlef-5a12b130a/" target="_blank" class="icon linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:leena.ikhlef@ensia.edu.dz" class="icon email" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        </div>
+                    </div>
+                </footer>
         <script>
             window.addEventListener("scroll", function () {
                 const navbar = document.querySelector(".navbar");
@@ -61,4 +154,24 @@
                 }
             });
         </script>
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll(".moment-slide");
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === index) slide.classList.add("active");
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            // Auto-change every 20 seconds
+            setInterval(nextSlide, 20000);
+        </script>
+
     </body>
