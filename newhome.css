@@ -161,7 +161,65 @@ body {
   width: 100%;
 }
 
+.circle{
+  width: 50px;
+  height: 50px;
+  background-color: #82634e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  color:#f9f0e1;
+  bottom: 1%;
+  right: 30%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
 
+}
+.circle2{
+  width: 50px;
+  height: 50px;
+  background-color: #82634e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  color:#f9f0e1;
+  bottom: 1%;
+  right: 25%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+
+}
+.circle3{
+  width: 50px;
+  height: 50px;
+  background-color: #82634e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  color:#f9f0e1;
+  bottom: 1%;
+  right: 20%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+
+}
+
+.circle:hover, 
+.circle2:hover,
+.circle3:hover {
+    background-color: #4b3528;
+
+
+}
 
 .services-section {
   display: flex;
@@ -348,7 +406,11 @@ body {
 .project-card:hover .card-info {
   opacity: 1;
 }
-
+.linkARGI{
+  text-decoration: none;
+  width: auto;
+  height: auto;
+}
 
 .scroll-buttons {
   position: absolute;
@@ -365,7 +427,7 @@ body {
   color: white;
   border: none;
   font-size: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 0.9rem 1rem;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -416,6 +478,15 @@ body {
 }
 
 .icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+
   color: #dd9f76;
+}
+
+.circle .icon:hover, 
+.circle2 .icon:hover,
+.circle3 .icon:hover{
+  color: #f9f0e1;
+    transform: scale(1);
+
 }
