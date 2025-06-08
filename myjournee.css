@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    z-index: 1000;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    color: white;
+    padding: 2rem 2rem;
+    /*i want the nav bar to be under it some shadw scince it the same color as the background*/
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+    margin-right: 1rem;
+}
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #373d41d3; /* transparent brown */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
+
+.navbar.scrolled .menu a,
+.navbar.scrolled h3 {
+    color: white;
+}
+.navbar {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+.menu a {
+    transition: color 0.4s ease;
+}
+.menu a:hover,
+.navbar.scrolled .menu a:hover {
+    color: #a6cdf1;
+    text-shadow: #444444c0 0px 0px 1px;
+}
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #0f162e;
+  color: white;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 10%;
+  background-image: url('ENSIA.png');
+  position: relative;
+  background-size: cover;                 /* ✅ Make the image cover the entire section */
+  background-position: center;            /* ✅ Center the image */
+  background-repeat: no-repeat;           /* ✅ Prevent the image from repeating */
+
+}
+
+.main_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 3; /* Ensure text is above the image */
+  top: 27%;
+  
+}
+.main-content {
+  max-width: 500px;
+  
+
+}
+
+.main-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-content #ENSIA {
+  color: #9ab9dc;
+}
+.link{
+  text-decoration: none;
+    color: #9ab9dc;
+
+}
+
+.main-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  background-color: #9ab9dc;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #658dba;
+}
+.circle{
+  width: 50px;
+  height: 50px;
+  background-color: #a6cdf1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  color:#f9f0e1;
+  bottom: 50%;
+  right: 1.5%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+
+}
+.circle2{
+  width: 50px;
+  height: 50px;
+  background-color: #a6cdf1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  color:#f9f0e1;
+  bottom: 37%;
+  right: 1.5%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+
+}
+.circle3{
+  width: 50px;
+  height: 50px;
+  background-color: #a6cdf1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  color:#f9f0e1;
+  bottom: 25%;
+  right: 1.5%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+
+}
+
+.circle:hover, 
+.circle2:hover,
+.circle3:hover {
+    background-color: #6e9eca;
+
+
+}
+
+.icon {
+  font-size: 1.4rem;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+
+  color: #dd9f76;
+}
+
+.circle .icon:hover, 
+.circle2 .icon:hover,
+.circle3 .icon:hover{
+  color: #ffffff;
+    transform: scale(1);
+
+}
