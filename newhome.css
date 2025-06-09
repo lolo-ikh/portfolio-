@@ -717,19 +717,23 @@ body {
   }
 
   .menu.active {
+    display: none;
     display: flex;
   }
 
   .menu li {
+    display: none;
     margin: 0.5rem 0;
   }
 
   .menu a {
+    display: none;
     font-size: 1rem;
   }
 
   .navbar.scrolled .menu {
     background-color: rgba(61, 34, 21, 0.9);
+    
   }
   .navbar.scrolled .hamburger {
     color: white;
