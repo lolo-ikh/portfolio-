@@ -30,6 +30,10 @@
                         <li><a href="myjournee.html#highlights">Highlights</a></li>
                     </ul>
                 </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+
             </div>
               <section class="hero">
                 <div class="main_section">
@@ -175,8 +179,10 @@
                     navbar.classList.remove("scrolled");
                 }
             });
-        </script>
-        <script>
+             function toggleMenu() {
+                const menu = document.querySelector('.menu');
+                menu.classList.toggle('show');
+            }
             let currentSlide = 0;
             const slides = document.querySelectorAll(".moment-slide");
 
@@ -193,7 +199,12 @@
             }
 
             // Auto-change every 20 seconds
-            setInterval(nextSlide, 20000);
+            setInterval(nextSlide, 20000);    
+
+            
         </script>
+       
+
 
     </body>
+</html>

@@ -3,6 +3,14 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
 html{
     scroll-behavior: smooth;
     width: 100%;
@@ -62,6 +70,10 @@ body {
   font-family: 'Times New Roman', Times, serif;
   width: 100%;
   color: white;
+}
+.container{
+  width: 100%;
+
 }
 .hero {
   width: 100%;
@@ -211,6 +223,7 @@ body {
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
+  width: 100%;
 }
 
 .timeline-section h2 {
@@ -460,10 +473,20 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero{
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+  }
   .navbar {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
+    width: 100%;
+  }
+  .navbar.scrolled{
+    background-color: #373d41d3; 
+;
   }
 
   .menu {
@@ -507,8 +530,12 @@ body {
     height: 40px;
   }
 
-  
-
+  .timeline-section{
+    width: 100%;
+  }
+  body{
+    width: 100%;
+  }
   .moment-slide {
     flex-direction: column;
     height: auto;
@@ -557,5 +584,58 @@ body {
 
   .footer h3 {
     font-size: 1.2rem;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 5%;
+  }
+}
+.navbar.scrolled .hamburger {
+    color: white;
+}
+/* NEW! Mobile-only horizontal scroll behavior */
+@media (max-width: 768px) {
+  .moments-carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: smooth;
+    height: auto;
+  }
+
+  .moment-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    opacity: 1 !important;
+    pointer-events: auto;
+    scroll-snap-align: start;
+  }
+
+  .moment-image, .moment-text {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .moment-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
   }
 }
