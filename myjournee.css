@@ -11,10 +11,7 @@ body, html {
     width: 100%;
     overflow-x: hidden;
 }
-html{
-    scroll-behavior: smooth;
-    width: 100%;
-}
+
 .navbar{
     z-index: 1000;
     overflow: hidden;
@@ -593,6 +590,9 @@ body {
   color: white;
   cursor: pointer;
 
+}
+i.fas.fa-bars:before{
+  display: none;
 }
 
 @media (max-width: 768px) {
