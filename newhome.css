@@ -621,7 +621,7 @@ body {
     height: auto;
     padding: 2rem 1.5rem;
     padding-top: 30%;
-    padding-left: 25px;
+    width: 100%;
   }
 
   .main_section {
