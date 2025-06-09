@@ -482,8 +482,8 @@ body {
     width: 100%;
   }
   .navbar.scrolled{
-    background-color: #373d41d3; 
-;
+    background-color: #373d41d3; /* transparent brown */
+    color: white;
   }
 
   .menu {
@@ -507,6 +507,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     top: 10%;
+    margin-bottom: 25px;
   }
 
   .main-content h1 {
@@ -591,9 +592,7 @@ body {
   cursor: pointer;
 
 }
-i.fas.fa-bars:before{
-  display: none;
-}
+
 
 @media (max-width: 768px) {
   .hamburger {
@@ -603,9 +602,7 @@ i.fas.fa-bars:before{
     right: 5%;
   }
 }
-.navbar.scrolled .hamburger {
-    color: white;
-}
+
 /* NEW! Mobile-only horizontal scroll behavior */
 @media (max-width: 768px) {
   .moments-carousel {

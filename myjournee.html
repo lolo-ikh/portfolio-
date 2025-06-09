@@ -172,28 +172,37 @@
                 </footer>
         
        
-        <script>
-            let currentSlide = 0;
-            const slides = document.querySelectorAll(".moment-slide");
 
-            function showSlide(index) {
-                slides.forEach((slide, i) => {
-                slide.classList.remove("active");
-                if (i === index) slide.classList.add("active");
-                });
-            }
+<script>
+    // Carousel script
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".moment-slide");
 
-            function nextSlide() {
-                currentSlide = (currentSlide + 1) % slides.length;
-                showSlide(currentSlide);
-            }
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) slide.classList.add("active");
+        });
+    }
 
-            // Auto-change every 20 seconds
-            setInterval(nextSlide, 20000);    
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
 
-            
+    setInterval(nextSlide, 20000);    
 
-        </script>
+    // Navbar scroll script
+    window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        // Add a class to change the navbar style when scrolled
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
 
     </body>
 </html>
