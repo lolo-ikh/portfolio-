@@ -619,7 +619,6 @@ body {
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    padding: 2rem 1.5rem;
     padding-top: 30%;
     width: 100%;
   }
