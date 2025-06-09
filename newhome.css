@@ -615,56 +615,124 @@ body {
 }
 
 
+/* 🌐 Mobile Responsiveness */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
-    align-items: flex-start;
     height: auto;
-    padding: 3rem 1.5rem;
-    padding-top: 150px;
-    
+    padding: 2rem 1.5rem;
+    padding-top: 30%;
+    padding-left: 25px;
   }
 
   .main_section {
-    width: 100%;
-    padding-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .main-content h1,
-  .main-content2 h1 {
-    font-size: 1.5rem;
+  .main-content,
+  .main-content2 {
+    max-width: 100%;
+  }
+
+  .main-content h1 {
+    font-size: 28px;
     text-align: left;
+  }
+
+  .main-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .hero-btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .main-content2 h1 {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.4;
   }
   .main-content2{
     padding-top: 25px;
-    padding-left: 50px;
   }
-
 
   .profile-image {
-    display: none;
+    display: none; /* hide on small screens */
   }
 
-  .circle, .circle2, .circle3 {
-    margin: 0.5rem;
-    width: 40px;
-    height: 40px;
+  .circle,
+  .circle2,
+  .circle3 {
     position: static;
-    bottom: auto;
-    right: auto;
-    
+    margin-right: 1rem;
+    margin-top: 1rem;
+    right: 0;
   }
 
-  .hero .main-content2 {
-    order: 2;
-  }
-
-  .hero .main-content {
-    order: 1;
-  }
-
-  .hero .main_section {
+  /* Wrap icons together */
+  .hero {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Optional: center social icons on mobile */
+  .circle,
+  .circle2,
+  .circle3 {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #3d2215;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 5%;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 2rem;
+    background-color: #fdf7ec;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0.5rem 0;
+  }
+
+  .menu a {
+    font-size: 1rem;
+  }
+
+  .navbar.scrolled .menu {
+    background-color: rgba(61, 34, 21, 0.9);
+  }
+  .navbar.scrolled .hamburger {
+    color: white;
   }
 }

@@ -19,8 +19,11 @@
                 <div class="logo">
                     <h3>LEENA</h3>
                 </div>
+                
                 <div >
                     <ul class="menu">
+                        
+
                         <li><a href="newhome.html">Home</a></li>
                         <li><a href="newhome.html#about">About</a></li>
                         <li><a href="newhome.html#skills">Skills</a></li>
@@ -29,6 +32,9 @@
                         <li><a href="myjournee.html#time">Academic Journey</a></li>
                         <li><a href="myjournee.html#highlights">Highlights</a></li>
                     </ul>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                            <i class="fas fa-bars"></i>
                 </div>
             </div>
               <section class="hero">
@@ -174,7 +180,13 @@
                     navbar.classList.remove("scrolled");
                 }
             });
+               function toggleMenu() {
+                const menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+                }
         </script>
+     
+
         <script>
             function downloadCV() {
                 // Change the URL to the actual file location of your PDF
