@@ -605,12 +605,14 @@ body {
 
   .service-card {
     padding-left: 0;
-    flex-direction: column;
     align-items: flex-start;
   }
 
   .stat h3 {
     font-size: 1.5rem;
+  }
+  .icon-circle{
+    margin-left: 5%;
   }
 }
 
